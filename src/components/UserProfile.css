@@ -1,0 +1,218 @@
+
+/* UserProfile.css */
+.user-profile {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 80px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.user-profile h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ff4500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-sections {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  min-width: 280px;
+}
+
+.section h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.profile-details p {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-details p:last-child {
+  border-bottom: none;
+}
+
+.edit-button,
+.save-button {
+  background: none;
+  border: none;
+  color: #ff4500;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-button {
+  margin-left: 10px;
+}
+
+.manage-items-link {
+  margin: 20px 0;
+  text-decoration: none;
+  color: #ff4500;
+  font-weight: bold;
+}
+
+.logout-button {
+  background: #ff4500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #ff7f50;
+}
+
+/* Additional styling for new components */
+
+/* Change Password Section */
+.section.change-password {
+  margin-top: 20px;
+}
+
+/* Change Password Button */
+.change-password-button {
+  background: #ff4500;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.change-password-button:hover {
+  background: #ff7f50;
+}
+
+/* Change Password Form */
+.change-password-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.change-password-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.change-password-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 280px;
+}
+
+/* Buttons inside Change Password Form */
+.save-password-button,
+.cancel-password-button {
+  background: #ff4500;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.cancel-password-button {
+  background: #ff4500;
+}
+
+.save-password-button:hover {
+  background: #ff7f50;
+}
+
+.cancel-password-button:hover {
+  background: #ff1a1d;
+}
+
+/* Password Message */
+.password-message {
+  color: #ff4500;
+  font-weight: bold;
+}
+
+/* Delete Account Button & Feedback */
+.delete-account-button {
+  background: #ff4500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 10px;
+}
+
+.delete-account-button:hover {
+  background: #ff7f50;
+}
+
+.delete-message {
+  margin-top: 10px;
+  color: #ff4500;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .profile-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    max-width: 100%;
+  }
+}

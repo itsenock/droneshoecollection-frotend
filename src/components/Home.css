@@ -1,0 +1,391 @@
+/* General Home Styles */
+.home {
+  margin-top: 80px; /* leave room for the fixed navbar */
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: blue;
+}
+
+/* ---------- Featured Shoe Section ---------- */
+./* ---------- Featured Shoe Section Adjustments ---------- */
+.featured-section {
+  padding: 20px 20px; /* Reduced padding */
+  background-color: #fff;
+  text-align: center;
+}
+
+.featured-section h2 {
+  font-size: 26px;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.featured-shoe {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.featured-image {
+  flex: 1 1 40%; /* Reduced to 40% width */
+  width: 50vw;
+  height: 300px;  /* Reduced height */
+  object-fit: cover;
+}
+
+.featured-details {
+  flex: 1 1 60%; /* Occupies the remaining space */
+  padding: 20px;
+  margin-right: 100px;
+  text-align: right;
+}
+
+.featured-details h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.featured-details p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.featured-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 15px;
+}
+
+
+.shop-now-btn {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.shop-now-btn:hover {
+  background-color: rgb(187, 81, 81);
+}
+
+/* Carousel arrows container to align both arrows */
+.carousel-arrows {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 0px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.arrow {
+  background-color: rgba(255,255,255,0.8);
+  border: none;
+  font-size: 30px;
+  color: blue;
+  cursor: pointer;
+  width: 50px;
+  margin-bottom: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+.arrow:hover {
+  background-color: rgba(255,255,255,1);
+}
+
+.left-arrow {
+  margin-right: auto;
+}
+
+.right-arrow {
+  margin-left: auto;
+}
+
+/* ---------- Features Banner ---------- */
+.features-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+  color: #fff;
+  padding: 20px 10px;
+  gap: 15px;
+}
+
+.feature {
+  text-align: center;
+  max-width: 150px;
+}
+
+.feature img {
+  max-width: 40px;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.feature p {
+  font-size: 14px;
+}
+
+/* ---------- Collections Section (Top Categories) ---------- */
+.collections-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.collections-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.collections-section p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: rgb(3, 7, 228);
+}
+
+.collections-grid {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.collection-card {
+  width: 180px;
+  height: 150px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: left;
+}
+
+.collection-overlay h3 {
+  margin: 0;
+  font-size: 20px;
+  color: red;
+}
+
+.collection-overlay p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* ---------- Latest Products Section ---------- */
+.latest-products-section {
+
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.latest-products-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: blue;
+}
+
+.products-grid {
+  display: flex;
+ flex-direction: column;
+  justify-content: left;
+  gap: 20px;
+}
+
+/* ---------- Product Card ---------- */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 170px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 5px;
+}
+
+.product-details h3 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: blue;
+}
+
+.product-price {
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-category {
+  font-size: 14px;
+  color: blue;
+  margin-bottom: 5px;
+}
+
+.view-details-link {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: red;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.view-details-link:hover {
+  background-color: rgb(0, 17, 255);
+}
+
+/* ---------- Trusted Brands Section ---------- */
+.trusted-brands-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.trusted-brands-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+.trusted-brands-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: blue;
+}
+
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.brand-card {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-card img {
+  max-width: 80%;
+  object-fit: contain;
+}
+
+.brand-card h3 {
+  font-size: 14px;
+  margin-top: 5px;
+  color: blue;
+}
+
+.brand-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 300px;
+  }
+  .carousel-details h2 {
+    font-size: 28px;
+  }
+  .carousel-details p {
+    font-size: 16px;
+  }
+  .shop-now-btn {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+  
+  .collections-grid,
+  .products-grid,
+  .brands-grid {
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .home {
+    margin-top: 15vh;
+  }
+  .carousel-image {
+    height: 200px;
+  }
+  .carousel-details h2 {
+    font-size: 24px;
+  }
+  .carousel-details p {
+    font-size: 14px;
+  }
+  .shop-now-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

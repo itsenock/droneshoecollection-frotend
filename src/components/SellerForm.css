@@ -1,0 +1,231 @@
+.sellerForm-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.seller-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.seller-form h2 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Input Containers */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+/* Floating Label Fields */
+.floating-label {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.floating-label input,
+.floating-label textarea {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.floating-label textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.floating-label input::placeholder,
+.floating-label textarea::placeholder {
+  color: transparent;
+}
+
+.floating-label > label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #999;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label textarea:focus + label,
+.floating-label textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 8px;
+  font-size: 12px;
+  color: #ff4500;
+  background-color: #fff;
+  padding: 0 4px;
+}
+
+/* Select dropdown styling */
+.input-container select {
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-container select:focus {
+  border-color: #ff4500;
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+}
+
+/* Image Upload Section */
+.image-upload {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.upload-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  background-color: #ff4500;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.upload-icon:hover {
+  background-color: #ff7f50;
+}
+
+/* Image Preview */
+.image-preview {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  position: relative;
+  margin: 10px;
+}
+
+.image-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.image-container button {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Submit Button */
+.seller-form button[type='submit'] {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.seller-form button[type='submit']:hover {
+  background-color: #ff4500;
+}
+
+/* Required Field Indicator */
+.required {
+  color: red;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .seller-form {
+    width: 95%;
+  }
+}
+
+@media (max-width: 450px) {
+  .seller-form {
+    padding: 15px;
+  }
+
+  .seller-form h2 {
+    font-size: 20px;
+  }
+
+  .upload-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .image-container button {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+  }
+
+  .seller-form button[type='submit'] {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

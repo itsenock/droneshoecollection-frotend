@@ -1,0 +1,146 @@
+/* General Styles for All Admin Pages */
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top:80px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f3f3f3;
+  }
+  
+  table tr:hover {
+    background-color: #e6f7ff;
+  }
+  
+  /* ApproveItems Component Styles */
+  .approve-item-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .approve-item-card img {
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .approve-item-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .approve-item-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .approve-item-card button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .approve-item-card button:first-child {
+    background-color: #28a745; /* Approve Button */
+    color: white;
+  }
+  
+  .approve-item-card button:last-child {
+    background-color: #dc3545; /* Reject Button */
+    color: white;
+  }
+  
+  .approve-item-card button:hover {
+    opacity: 0.9;
+  }
+  
+  /* ViewLoggedInUsers Component Styles */
+  .admin-users {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-users h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .admin-users table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .admin-users th, .admin-users td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .admin-users th {
+    background: #007bff;
+    color: white;
+    text-align: left;
+  }
+  
+  .admin-users tr:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Transactions Component Styles */
+  .transactions {
+    margin-top: 20px;
+  }
+  
+  .transactions p {
+    font-size: 16px;
+    text-align: center;
+    color: #555;
+  }
+  

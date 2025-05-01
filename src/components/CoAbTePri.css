@@ -1,0 +1,211 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+ 
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+h1 {
+  font-size: 30px;
+  color: #ff7f50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact Us Page Styles */
+.contact-us {
+  padding: 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.contact-us h1, .contact-us h2 {
+  color: #ff7f50;
+  margin-bottom: 20px;
+}
+
+.contact-us p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Contact Information Section */
+.contact-info {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-info strong {
+  color: #333;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ff4500;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  border-color: #ff7f50;
+}
+
+/* About Us Page Styling */
+.about-us {
+  padding: 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.about-us h1 {
+  color: #ff7f50;
+}
+
+.about-us p {
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+/* Terms of Service and Privacy Policy Styling */
+.terms-of-service, .privacy-policy {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 80px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-of-service h1, .privacy-policy h1 {
+  font-size: 30px;
+  color: #ff7f50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.terms-of-service ul, .privacy-policy ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.terms-of-service ul li, .privacy-policy ul li {
+  margin-bottom: 10px;
+}
+
+.terms-of-service p:last-child, .privacy-policy p:last-child {
+  margin-top: 20px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p, ul, label {
+    font-size: 14px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    padding: 8px;
+  }
+
+  .contact-form button {
+    padding: 8px 16px;
+  }
+}

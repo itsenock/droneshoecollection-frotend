@@ -160,24 +160,24 @@ const Home = () => {
       )}
 
       {/* Features Banner */}
-      <div className="features-banner">npm
+      <div className="features-banner">
         <div className="feature">
-          <img src="https://www.pexels.com/photo/man-in-red-crew-neck-t-shirt-holding-a-box-6868185/" alt="Free Shipping" />
+          <img src="logo.jpeg" alt="Free Shipping" />
           <h3>Free Shipping</h3>
           <p>On orders over KShs 10,000</p>
         </div>
         <div className="feature">
-          <img src="https://www.pexels.com/photo/person-using-self-check-in-kiosk-3943949/" alt="Easy Returns" />
+          <img src="logo.jpeg" alt="Easy Returns" />
           <h3>Easy Returns</h3>
           <p>1-Day Return Policy</p>
         </div>
         <div className="feature">
-          <img src="https://www.pexels.com/photo/person-holding-bank-card-4482900/" alt="Secure Payment" />
+          <img src="logo.jpeg" alt="Secure Payment" />
           <h3>Secure Payment</h3>
           <p>100% Secure Payment</p>
         </div>
         <div className="feature">
-          <img src="https://www.pexels.com/photo/black-corded-headphones-on-yellow-surface-7658197/" alt="Online Support" />
+          <img src="logo.jpeg" alt="Online Support" />
           <h3>Online Support</h3>
           <p>24/7 Support</p>
         </div>

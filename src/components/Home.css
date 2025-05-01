@@ -169,6 +169,7 @@
 .collections-grid {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -235,6 +236,7 @@
   border-radius: 10px;
   width: 170px;
   overflow: hidden;
+  flex-shrink: 0;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -368,6 +370,11 @@
     flex-direction: row;
     overflow-x: auto;
     align-items: center;
+  }
+  .featured-details {
+     /* Occupies the remaining space */
+    margin-right: 0;
+
   }
 }
 

@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { jwtDecode } from "jwt-decode";
+
 import './Home.css';
 
 const Home = () => {
+  // State to determine admin status
+  const [isAdmin, setIsAdmin] = useState(false);
   // All products fetched from backend (all approved/shoes items)
   const [products, setProducts] = useState([]);
   // Randomly chosen featured product for the carousel
@@ -13,6 +17,21 @@ const Home = () => {
   const [collections, setCollections] = useState([]);
   // Trusted Brands section (unique brands) extracted from products
   const [brands, setBrands] = useState([]);
+
+  // Check if a user is logged in as admin
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      try {
+        const payload = jwtDecode(token);
+        if (payload.role === "admin") {
+          setIsAdmin(true);
+        }
+      } catch (error) {
+        console.error("Error decoding token:", error);
+      }
+    }
+  }, []);
 
   // Fetch products from the backend on mount
   useEffect(() => {
@@ -129,6 +148,15 @@ const Home = () => {
 
   return (
     <div className="home">
+      {/* Admin Navigation - only displayed when an admin is logged in */}
+      {isAdmin && (
+        <div className="admin-navigation">
+          <Link to="/sell">Sell</Link>
+          <Link to="/orders">Orders</Link>
+          <Link to="/users">Users</Link>
+        </div>
+      )}
+
       {/* Featured Shoe (Carousel) Section */}
       {featuredProduct && (
         <div className="featured-section">

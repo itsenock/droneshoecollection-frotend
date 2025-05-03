@@ -92,7 +92,7 @@ export const CartProvider = ({ children }) => {
       if (!token) return;
 
       try {
-        const response = await axios.get('http://localhost:5000/api/user/wishlist', {
+        const response = await axios.get('https://drone-482w.onrender.com/api/user/wishlist', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

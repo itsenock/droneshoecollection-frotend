@@ -5,6 +5,28 @@
   background-color: #f8f8f8;
   color: blue;
 }
+.admin-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.admin-navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #ff6600;
+  transition: 0.3s;
+}
+
+.admin-navigation a:hover {
+  background-color: #cc5500;
+}
 
 /* ---------- Featured Shoe Section ---------- */
 ./* ---------- Featured Shoe Section Adjustments ---------- */

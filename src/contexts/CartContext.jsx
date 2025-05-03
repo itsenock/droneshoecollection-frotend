@@ -66,7 +66,7 @@ export const CartProvider = ({ children }) => {
     }
 
     try {
-      const response = await axios.get('http://localhost:5000/api/user/cart', {
+      const response = await axios.get('https://drone-482w.onrender.com/api/user/cart', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -116,7 +116,7 @@ export const CartProvider = ({ children }) => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/user/cart',
+        'https://drone-482w.onrender.com/api/user/cart',
         {
           product_id: product.product_id,
           quantity: product.quantity || 1,
@@ -148,7 +148,7 @@ export const CartProvider = ({ children }) => {
     if (!token) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/user/cart/${productId}`, {
+      await axios.delete(`https://drone-482w.onrender.com/api/user/cart/${productId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -169,7 +169,7 @@ export const CartProvider = ({ children }) => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/user/wishlist',
+        'https://drone-482w.onrender.com/api/user/wishlist',
         {
           product_id: product.product_id,
           name: product.name,
@@ -200,7 +200,7 @@ export const CartProvider = ({ children }) => {
     if (!token) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/user/wishlist/${productId}`, {
+      await axios.delete(`https://drone-482w.onrender.com/api/user/wishlist/${productId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -221,7 +221,7 @@ export const CartProvider = ({ children }) => {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/user/cart/${productId}`,
+        `https://drone-482w.onrender.com/api/user/cart/${productId}`,
         { quantity },
         {
           headers: {

@@ -178,7 +178,7 @@ const Home = () => {
         </div>
         <div className="feature">
           <img src="logo.jpeg" alt="Online Support" />
-          <h3>Online Support</hhttps://www.pexels.com/photo/black-corded-headphones-on-yellow-surface-7658197/
+          <h3>Online Support</h3>
         </div>
       </div>
 

@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/products');
+        const res = await fetch('https://drone-482w.onrender.com/api/products');
         const data = await res.json();
         setProducts(data);
         setLatestProducts(data);
@@ -77,7 +77,7 @@ const Home = () => {
     latestProducts.map((product) => (
       <div className="product-card" key={product._id}>
         <img
-          src={`http://localhost:5000/${product.images && product.images.length > 0 ? product.images[0] : 'placeholder.jpg'}`}
+          src={`https://drone-482w.onrender.com/${product.images && product.images.length > 0 ? product.images[0] : 'placeholder.jpg'}`}
           alt={product.name}
           className="product-image"
         />
@@ -101,7 +101,7 @@ const Home = () => {
         className="collection-card"
       >
         <img
-          src={`http://localhost:5000/${col.image}`}
+          src={`https://drone-482w.onrender.com/${col.image}`}
           alt={col.name}
         />
         <div className="collection-overlay">
@@ -120,7 +120,7 @@ const Home = () => {
         className="brand-card"
       >
         <img
-          src={`http://localhost:5000/${brand.image}`}
+          src={`https://drone-482w.onrender.com/${brand.image}`}
           alt={brand.name}
         />
         <h3>{brand.name}</h3>
@@ -135,7 +135,7 @@ const Home = () => {
           <h2>Featured Shoe</h2>
           <div className="featured-shoe">
             <img
-              src={`http://localhost:5000/${featuredProduct.images && featuredProduct.images.length > 0 ? featuredProduct.images[0] : 'placeholder.jpg'}`}
+              src={`https://drone-482w.onrender.com/${featuredProduct.images && featuredProduct.images.length > 0 ? featuredProduct.images[0] : 'placeholder.jpg'}`}
               alt={featuredProduct.name}
               className="featured-image"
             />
@@ -178,8 +178,7 @@ const Home = () => {
         </div>
         <div className="feature">
           <img src="logo.jpeg" alt="Online Support" />
-          <h3>Online Support</h3>
-          <p>24/7 Support</p>
+          <h3>Online Support</hhttps://www.pexels.com/photo/black-corded-headphones-on-yellow-surface-7658197/
         </div>
       </div>
 

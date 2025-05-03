@@ -29,7 +29,7 @@ function App() {
     // Fetch products from the backend; public pages can display them.
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://campusbackend-production.up.railway.app/api/products');
+        const response = await fetch('https://drone-482w.onrender.com/api/products');
         const data = await response.json();
         setProducts(data);
       } catch (error) {

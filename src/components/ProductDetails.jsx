@@ -19,11 +19,11 @@ const ProductDetails = ({ products }) => {
         const productData = products.find((p) => p._id === id);
         if (productData) {
           setProduct(productData);
-          setMainImage(`http://localhost:5000/${productData.images[0]}`);
+          setMainImage(`https://drone-482w.onrender.com/${productData.images[0]}`);
         } else {
-          const response = await axios.get(`http://localhost:5000/api/product/${id}`);
+          const response = await axios.get(`https://drone-482w.onrender.com/api/product/${id}`);
           setProduct(response.data);
-          setMainImage(`http://localhost:5000/${response.data.images[0]}`);
+          setMainImage(`https://drone-482w.onrender.com/${response.data.images[0]}`);
         }
       } catch (error) {
         console.error('Error fetching product:', error);
@@ -61,9 +61,9 @@ const ProductDetails = ({ products }) => {
             {product.images.map((image, index) => (
               <img
                 key={index}
-                src={`http://localhost:5000/${image}`}
+                src={`https://drone-482w.onrender.com/${image}`}
                 alt={`${product.name} ${index + 1}`}
-                onClick={() => setMainImage(`http://localhost:5000/${image}`)}
+                onClick={() => setMainImage(`https://drone-482w.onrender.com/${image}`)}
               />
             ))}
           </div>

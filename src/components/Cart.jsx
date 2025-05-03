@@ -73,7 +73,7 @@ const Cart = () => {
               key={item._id}
             >
               <img
-                src={`https://campusbackend-production.up.railway.app/${item.images[0]}`}
+                src={`https://drone-482w.onrender.com/${item.images[0]}`}
                 alt={item.name}
               />
               <div className="item-details">
@@ -132,7 +132,7 @@ const Cart = () => {
           {wishlistItems.map((item) => (
             <div className="wishlist-item" key={item._id}>
               <img
-                src={`https://campusbackend-production.up.railway.app/${item.images[0]}`}
+                src={`https://drone-482w.onrender.com/${item.images[0]}`}
                 alt={item.name}
               />
               <div className="item-details">

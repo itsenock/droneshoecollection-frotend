@@ -115,7 +115,7 @@ const SellerForm = ({ onAddProduct }) => {
 
       // Post the FormData to the backend; adjust endpoint as needed
       const response = await axios.post(
-        'http://localhost:5000/api/user/item',
+        'https://drone-482w.onrender.com/api/user/item',
         formData,
         {
           headers: {

@@ -51,7 +51,7 @@ const LoginForm = () => {
           return;
         }
         
-        response = await axios.post('http://localhost:5000/api/auth/register', {
+        response = await axios.post('https://drone-482w.onrender.com/api/auth/register', {
           fullname: formData.fullname,
           email: formData.email,
           phone_number: formData.phone_number, // using "phone_number"
@@ -64,7 +64,7 @@ const LoginForm = () => {
         navigate('/');
       } else {
         // Login flow.
-        response = await axios.post('http://localhost:5000/api/auth/login', {
+        response = await axios.post('https://drone-482w.onrender.com/api/auth/login', {
           email: formData.email,
           password: formData.password,
         });
@@ -92,7 +92,7 @@ const LoginForm = () => {
   // Handle password reset.
   const handlePasswordReset = async () => {
     try {
-      await axios.post('http://localhost:5000/api/auth/reset-password', { email: formData.email });
+      await axios.post('https://drone-482w.onrender.com/api/auth/reset-password', { email: formData.email });
       toast.success('Password reset email sent!');
     } catch (error) {
       console.error('Password Reset Error:', error);
@@ -110,7 +110,7 @@ const LoginForm = () => {
     }
     try {
       await axios.put(
-        'http://localhost:5000/api/auth/change-password',
+        'https://drone-482w.onrender.com/api/auth/change-password',
         {
           old_password: formData.password,
           new_password: formData.newPassword,

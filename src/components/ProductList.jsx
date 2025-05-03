@@ -25,7 +25,7 @@ const ProductList = () => {
 
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/products');
+        const response = await axios.get('https://drone-482w.onrender.com/api/products');
         setProducts(response.data);
 
         // Apply filtering based on category and gender
@@ -99,7 +99,7 @@ const ProductList = () => {
                 <div className="product-card" key={product._id}>
                   <Link to={`/product/${product._id}`}>
                     <img
-                      src={`http://localhost:5000${product.images[0]}`}
+                      src={`https://drone-482w.onrender.com${product.images[0]}`}
                       alt={product.name}
                       className="product-image"
                     />

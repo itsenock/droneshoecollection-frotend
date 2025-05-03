@@ -8,7 +8,7 @@ const CategoryCard = ({ category }) => {
     <Link to={`/products?category=${encodeURIComponent(category.name)}`} className="category-card">
       <div
         className="category-image"
-        style={{ backgroundImage: `url(http://localhost:5000/${category.image})` }}
+        style={{ backgroundImage: `url(https://drone-482w.onrender.com/${category.image})` }}
       >
         <div className="overlay">
           <h3>{category.name}</h3>

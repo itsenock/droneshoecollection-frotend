@@ -24,7 +24,7 @@ const UserProfile = () => {
           setUserData(null);
           return;
         }
-        const response = await axios.get('http://localhost:5000/api/auth/me', {
+        const response = await axios.get('https://drone-482w.onrender.com/api/auth/me', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUserData(response.data);
@@ -57,7 +57,7 @@ const UserProfile = () => {
     try {
       const token = localStorage.getItem('token');
       await axios.put(
-        'http://localhost:5000/api/auth/update',
+        'https://drone-482w.onrender.com/api/auth/update',
         { [editingField]: editValue },
         {
           headers: {
@@ -91,7 +91,7 @@ const UserProfile = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        'http://localhost:5000/api/auth/change-password',
+        'https://drone-482w.onrender.com/api/auth/change-password',
         {
           old_password: oldPassword,
           new_password: newPassword,
@@ -173,7 +173,7 @@ const UserProfile = () => {
                 try {
                   const token = localStorage.getItem('token');
                   const response = await axios.delete(
-                    'http://localhost:5000/api/auth/delete-account',
+                    'https://drone-482w.onrender.com/api/auth/delete-account',
                     { headers: { Authorization: `Bearer ${token}` } }
                   );
                   alert(response.data.message);
